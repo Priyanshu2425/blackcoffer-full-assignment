@@ -1,0 +1,112 @@
+html{
+    overflow-y: scroll;
+}
+#dashboard{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    font-size: 1rem;
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.5rem !important;
+    margin-bottom: 20px;
+}
+
+#sidebar{
+    width: 25%;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    color: #424051;
+    overflow-y: hidden;
+}
+
+
+#sidebar div{
+    font-size: 1rem;
+    padding: 1%;
+    height: 52px;
+    justify-self: center;
+}
+
+#dataviews{
+    width: 100%;
+    padding: 2% 2% 0 2%
+}
+
+#topbar input{
+    font-size: 1rem;
+    border: none;
+    padding: 10px;
+    width: 100px;
+}
+
+#topbar{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    padding: 0.5% 1%;
+    border-radius: 5px;
+}
+
+#topbar img{
+    width: 20px;
+    height: 20px;
+    align-self: center;
+}
+#topbar div{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.graphs{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    margin: 20px 0;
+    padding: 5%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.page-scroll{
+    overflow: scroll;
+}
+
+.width-300{
+    width: 300px !important;
+}
+
+.width-0{
+    width: 0px;
+}
+@media only screen and (max-width: 1100px){
+    .graphs{
+        display: block;
+        height: max-content;
+    }
+    #menu-icon{
+        display: block !important;
+    }
+    #sidebar{
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        background-color: white;
+        height: 100%;
+        overflow-y: scroll;
+        display: none;
+        width: 0px;
+        transition: width 2s;
+    }
+
+    html{
+        overflow-y: hidden;
+    }
+}

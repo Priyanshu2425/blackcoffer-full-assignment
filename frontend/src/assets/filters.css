@@ -1,0 +1,11 @@
+.filter-container{
+    height: 0px;
+    display: none;
+    overflow: hidden;
+    cursor: pointer;
+    transition: height 0.8s;
+}
+
+#filters{
+    height: 100%;
+}
